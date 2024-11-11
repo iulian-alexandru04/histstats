@@ -73,16 +73,3 @@ class Trie:
         return prefixes
 
 
-# Initialize the Trie
-trie = Trie()
-
-# Insert words
-trie.insert("hello")
-trie.insert("hell")
-trie.insert("heaven")
-trie.insert("heavy")
-
-sts = trie.prefix_stats()
-sts.sort(key=lambda e: len(e[0])*e[1], reverse=True)
-print(sts)
-
